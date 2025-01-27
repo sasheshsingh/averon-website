@@ -1,4 +1,4 @@
-export const Hero = ({ title, paragraph, video }) => {
+export const BoardingVideo = ({ title, paragraph, video }) => {
     return (
         <section className="w-screen h-screen flex items-center overflow-hidden overflow-x-hidden relative">
             <video
