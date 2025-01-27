@@ -16,7 +16,7 @@ const logoList = [
     {name: "Google", image: googleLogo},
 ]
 export const LogoTicker = () =>{
-    return (<section className="w-screen py-24">
+    return (<section className="w-screen py-36 mb-36">
         <div className="container overflow-x-clip">
             <div>
                 <h1 className="text-center text-white/50 text-7xl py-24"> Our Trusted Partners</h1>
