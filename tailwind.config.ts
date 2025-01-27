@@ -26,6 +26,8 @@ const config: Config = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-gradient-mask-image")
+  ],
 };
 export default config;
