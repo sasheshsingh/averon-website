@@ -11,10 +11,10 @@ export const Header = () => {
             </div>
           </div>
           <div>
-            <nav className="flex gap-8 text-sm">
+            <nav className="flex gap-8 text-1xl">
               <a
                   href="/"
-                  className=" text-gray-400 font-medium hover:text-white transition"
+                  className=" text-gray-400 font-bold hover:text-white transition"
               >
                 Home
               </a>

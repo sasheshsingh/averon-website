@@ -15,7 +15,7 @@ export default function Home() {
         paragraph="At Averon, We are redefining Urban Security and public safety through cutting-edge autonomous Drone Ecosystems."
       />
       <LogoTicker />
-      <Testimonials />
+      {/*<Testimonials />*/}
       <BoardingVideo
         video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         title="Next-Gen Drone Technology"
