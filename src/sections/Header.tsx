@@ -1,5 +1,4 @@
 import LogoIcon from "@/assets/logo.svg";
-import MenuIcon from "@/assets/icon-menu.svg";
 export const Header = () => {
   return (
     <header className="py-4 border-b border-white/15 top-0 z-10 bg-transparent">
@@ -19,13 +18,13 @@ export const Header = () => {
                 Home
               </a>
               <a
-                  href="/skyline"
+                  href="/home-security"
                   className=" text-gray-400 font-medium hover:text-white transition"
               >
-                Drone
+                Home Security
               </a>
               <a
-                  href="#"
+                  href="/skyline"
                   className="text-gray-400 font-medium hover:text-white transition"
               >
                 Skyline
@@ -39,9 +38,9 @@ export const Header = () => {
             </nav>
           </div>
           <div className="flex gap-4 items-center">
-            <button className="border py-2 px-3 rounded-lg font-medium text-sm">
+            <a href="/contact-us" className="border py-2 px-3 rounded-lg font-medium text-sm">
               Join Waitlist
-            </button>
+            </a>
           </div>
         </div>
       </div>

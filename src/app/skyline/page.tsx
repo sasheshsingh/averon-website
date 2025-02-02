@@ -10,7 +10,7 @@ export default function Main() {
     <div>
       <Header />
       <Hero
-        title="Home Security Drone"
+        title="Skyline"
         paragraph="Bringing the excellence of Drone intelligence to your doorsteps."
       />
         <DescriptionCards />
