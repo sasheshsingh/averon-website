@@ -3,7 +3,8 @@
     Background: zinc-950
     Border & Outlines: zinc-500
     Titles & Headers: white
-    subtitles / descriptions / hover: zinc-300
+    subtitles / descriptions: zinc-300
+    hover & small notes: zinc-400
     interactive color: indigo-400
 */
 

@@ -78,7 +78,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={homeLink}
-                className="block py-2 px-3 font-medium text-white hover:text-zinc-300 hover:duration-150 md:p-0"
+                className="block py-2 px-3 font-medium text-white hover:text-zinc-400 hover:duration-150 md:p-0"
                 aria-current="page"
               >
                 {homeNavbar}
@@ -91,7 +91,7 @@ const Navbar = () => {
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
             >
-              <div className="cursor-pointer font-medium py-2 px-3 text-white rounded-sm hover:text-zinc-300 hover:duration-150 md:p-0 flex items-center">
+              <div className="cursor-pointer font-medium py-2 px-3 text-white rounded-sm hover:text-zinc-400 hover:duration-150 md:p-0 flex items-center">
                 {productsNavbar}
                 <ChevronDown className="w-4 h-4 text-white ml-1 mt-1" />
               </div>
@@ -135,7 +135,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={teamLink}
-                className="block py-2 px-3 font-medium text-white hover:text-zinc-300 hover:duration-150 md:p-0"
+                className="block py-2 px-3 font-medium text-white hover:text-zinc-400 hover:duration-150 md:p-0"
               >
                 {teamNavbar}
               </Link>
@@ -145,7 +145,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={contactLink}
-                className="block py-2 px-3 font-medium text-white hover:text-zinc-300 hover:duration-150 md:p-0"
+                className="block py-2 px-3 font-medium text-white hover:text-zinc-400 hover:duration-150 md:p-0"
               >
                 {contactNavbar}
               </Link>
