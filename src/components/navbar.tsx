@@ -56,7 +56,7 @@ const Navbar = () => {
                 containerClassName="rounded-lg"
                 as="button"
                 className="bg-zinc-950 text-white flex items-center space-x-2"
-                duration={0.5} 
+                duration={0.4} 
               >
                 <span>{joinWaitlist}</span>
               </HoverBorderGradient>

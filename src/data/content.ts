@@ -1,11 +1,15 @@
-// HINTS FOR COLOR USAGE
+// HINTS FOR COLOR / SIZE USAGE
 /*
     Background: zinc-950
     Border & Outlines: zinc-500
     Titles & Headers: white
-    subtitles / descriptions: zinc-300
+    card icons: zinc-300
+    subtitles / descriptions: zinc-400
     hover & small notes: zinc-400
     interactive color: indigo-400
+    line height: leading-6
+    Card titles: text-xl
+    Card subtitles: text-sm 
 */
 
 // HERO
@@ -13,6 +17,15 @@ export const heroTitle = "A New Paradigm";
 export const heroSubtitleStart = "World's First";
 export const heroSubtitleEnd = "UAVs for Safer World & Smarter Skies";
 export const heroSubtitleAnimatingWords = ["Intelligent", "Automated", "Elegant", "AI-Based"];
+
+// VISION
+export const ourVisionTitle = "Our Vision";
+export const ourVisionCardOneTitle = "Title One";
+export const ourVisionCardTwoTitle = "Title One";
+export const ourVisionCardThreeTitle = "Title One";
+export const ourVisionCardOneSubtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
+export const ourVisionCardTwoSubtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
+export const ourVisionCardThreeSubtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
 
 // EXTERNAL LINKS
 export const waitlistURL = "https://www.google.com";
