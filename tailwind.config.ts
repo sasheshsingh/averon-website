@@ -1,31 +1,24 @@
-import type { Config } from "tailwindcss";
 
-const config: Config = {
+module.exports = {
   content: [
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: "20px",
-        lg: "80px",
-      },
-      screens: {
-        sm: "375px",
-        md: "768px",
-        lg: "1200px",
-      },
+    colors: {
+      "background": '#000000', 
+      "primary": '#FFFFFF',
+      "secondary": '#B7B7B7',
+      "edges": "#515151",
+      "main": "#A8A8FF",
     },
-    screens: {
-      sm: "375px",
-      md: "768px",
-      lg: "1200px",
+    extend: {
     },
-    extend: {},
   },
-  plugins: [require("tailwind-gradient-mask-image")],
+  plugins: [require('flowbite/plugin')],
 };
-export default config;
