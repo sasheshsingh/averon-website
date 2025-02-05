@@ -8,6 +8,11 @@
     interactive color: indigo-400
 */
 
+// HERO
+export const heroTitle = "A New Paradigm";
+export const heroSubtitleStart = "World's First";
+export const heroSubtitleEnd = "UAVs for Safer World & Smarter Skies";
+export const heroSubtitleAnimatingWords = ["Intelligent", "Automated", "Elegant", "AI-Based"];
 
 // EXTERNAL LINKS
 export const waitlistURL = "https://www.google.com";
@@ -29,7 +34,7 @@ export const privacyPolicyLink = "/privacy";
 export const ethicsLink = "/ethics";
 
 // CONTENT
-export const joinWaitlist = "Join Waitlist";
+export const joinWaitlist = "Our Waitlist";
 export const madeWithText = "Made with ";
 export const inSwitzerlandText = "In Switzerland";
 export const copyrightSign = "© ";

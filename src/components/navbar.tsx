@@ -6,6 +6,7 @@ import AveronLogo from "../assets/Averon.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
 import {
   waitlistURL,
   homeNavbar,
@@ -27,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-zinc-950 w-full">
-      <div className="max-w-screen-xl flex flex-wrap items-center border-b-[0.2px] border-b-indigo-400 border-opacity-40 justify-between mx-auto py-2 px-16">
+      <div className="max-w-screen-xl flex flex-wrap items-center border-b-[0.2px] border-b-indigo-400 border-opacity-10 justify-between mx-auto py-2 px-16">
         {/* Averon Logo */}
         <Link
           href={homeLink}
@@ -39,23 +40,8 @@ const Navbar = () => {
         {/* Waitlist Button */}
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a target="_blank" href={waitlistURL}>
-            <motion.button
-              type="button"
+            <motion.div
               className="relative overflow-hidden text-white font-medium rounded-lg text-sm px-4 py-2 text-center"
-              animate={{
-                backgroundImage: [
-                  "linear-gradient(to right, #4646FF, #A8A8FF, #000000)",
-                  "linear-gradient(to right, #000000, #A8A8FF, #4646FF)",
-                  "linear-gradient(to right, #4646FF, #A8A8FF, #000000)",
-                ],
-                backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "linear",
-              }}
               style={{ backgroundSize: "200% 200%" }}
               whileTap={{
                 scale: 0.95,
@@ -66,8 +52,15 @@ const Navbar = () => {
                 transition: { type: "spring", stiffness: 300, damping: 15 },
               }}
             >
-              {joinWaitlist}
-            </motion.button>
+              <HoverBorderGradient
+                containerClassName="rounded-lg"
+                as="button"
+                className="bg-zinc-950 text-white flex items-center space-x-2"
+                duration={0.5} 
+              >
+                <span>{joinWaitlist}</span>
+              </HoverBorderGradient>
+            </motion.div>
           </a>
         </div>
 
