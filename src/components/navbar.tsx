@@ -5,6 +5,7 @@ import React from "react";
 import AveronLogo from "../assets/Averon.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 import {
   waitlistURL,
   homeNavbar,
@@ -18,6 +19,7 @@ import {
   airpalLink,
   teamLink,
   contactLink,
+  joinWaitlist,
 } from "@/data/content";
 
 const Navbar = () => {
@@ -25,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-background w-full">
-      <div className="max-w-screen-xl flex flex-wrap items-center border-b-[0.2px] border-b-main border-opacity-20 justify-between  mx-auto py-2 px-16">
+      <div className="max-w-screen-xl flex flex-wrap items-center border-b-[0.2px] border-b-main border-opacity-20 justify-between mx-auto py-2 px-16">
         {/* Averon Logo */}
         <Link
           href={homeLink}
@@ -64,7 +66,7 @@ const Navbar = () => {
                 transition: { type: "spring", stiffness: 300, damping: 15 },
               }}
             >
-              Join Waitlist
+              {joinWaitlist}
             </motion.button>
           </a>
         </div>
@@ -76,7 +78,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={homeLink}
-                className="block py-2 px-3 font-light text-primary bg-transparent md:p-0"
+                className="block py-2 px-3 font-light text-primary hover:text-secondary hover:duration-150 md:p-0"
                 aria-current="page"
               >
                 {homeNavbar}
@@ -89,8 +91,9 @@ const Navbar = () => {
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
             >
-              <div className="cursor-pointer font-light block py-2 px-3 text-primary rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">
+              <div className="cursor-pointer font-light py-2 px-3  text-primary rounded-sm hover:text-secondary hover:duration-150 md:p-0 flex items-center">
                 {productsNavbar}
+                <ChevronDown className="w-4 h-4 text-primary ml-2" />
               </div>
 
               {/* Wrap dropdown in AnimatePresence to handle exit animations */}
@@ -132,7 +135,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={teamLink}
-                className="block py-2 px-3 font-light text-primary md:p-0"
+                className="block py-2 px-3 font-light text-primary hover:text-secondary hover:duration-150 md:p-0"
               >
                 {teamNavbar}
               </Link>
@@ -142,7 +145,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={contactLink}
-                className="block py-2 px-3 font-light text-primary md:p-0"
+                className="block py-2 px-3 font-light text-primary hover:text-secondary hover:duration-150 md:p-0"
               >
                 {contactNavbar}
               </Link>
