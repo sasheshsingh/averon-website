@@ -43,7 +43,7 @@ import { Heart } from "lucide-react";
 const Footer = () => {
   return (
     <div className="bg-zinc-950 w-full max-w-screen-xl mx-auto py-2 px-16">
-      <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+      <div className="grid grid-cols-4 gap-8 px-4 py-6 lg:py-8 ml-32 md:grid-cols-4">
         {/* Company section */}
         <div>
           <h2 className="mb-6 text-white text-sm font-semibold uppercase">
@@ -195,8 +195,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Note section */}
-      <div className="w-full mt-2 mb-4 border-t-[2px] border-opacity-40 border-indigo-400" />
+      {/* Divider */}
+      <div className="w-full mt-2 mb-4 border-t-[2px] border-opacity-10 border-indigo-400" />
+
+      {/* Bottom Note */}
       <div className="px-4 py-2 flex flex-col md:flex-row md:items-center md:justify-center">
         <span className="text-sm text-zinc-400 sm:text-center block">
           {copyrightSign} {new Date().getFullYear()}{" "}
