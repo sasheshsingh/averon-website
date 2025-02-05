@@ -26,8 +26,8 @@ const Navbar = () => {
   const [hover, setHover] = useState(false);
 
   return (
-    <div className="bg-background w-full">
-      <div className="max-w-screen-xl flex flex-wrap items-center border-b-[0.2px] border-b-main border-opacity-20 justify-between mx-auto py-2 px-16">
+    <div className="bg-zinc-950 w-full">
+      <div className="max-w-screen-xl flex flex-wrap items-center border-b-[0.2px] border-b-indigo-400 border-opacity-40 justify-between mx-auto py-2 px-16">
         {/* Averon Logo */}
         <Link
           href={homeLink}
@@ -73,12 +73,12 @@ const Navbar = () => {
 
         {/* Navbar Menu Items */}
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-background">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-zinc-950">
             {/* Home */}
             <li>
               <Link
                 href={homeLink}
-                className="block py-2 px-3 font-light text-primary hover:text-secondary hover:duration-150 md:p-0"
+                className="block py-2 px-3 font-medium text-white hover:text-zinc-300 hover:duration-150 md:p-0"
                 aria-current="page"
               >
                 {homeNavbar}
@@ -91,37 +91,37 @@ const Navbar = () => {
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
             >
-              <div className="cursor-pointer font-light py-2 px-3  text-primary rounded-sm hover:text-secondary hover:duration-150 md:p-0 flex items-center">
+              <div className="cursor-pointer font-medium py-2 px-3 text-white rounded-sm hover:text-zinc-300 hover:duration-150 md:p-0 flex items-center">
                 {productsNavbar}
-                <ChevronDown className="w-4 h-4 text-primary ml-2" />
+                <ChevronDown className="w-4 h-4 text-white ml-1 mt-1" />
               </div>
 
               {/* Wrap dropdown in AnimatePresence to handle exit animations */}
               <AnimatePresence>
                 {hover && (
                   <motion.div
-                    className="absolute left-0 w-48 bg-background shadow-md rounded-lg mt-2"
+                    className="absolute left-0 w-48 bg-zinc-950 shadow-md rounded-lg mt-2"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }} // Ensure smooth fade-out
+                    exit={{ opacity: 0, y: -10 }}
                     transition={{
                       opacity: { duration: 0.3 },
                       y: { type: "spring", stiffness: 100, damping: 15 },
                     }}
                     style={{ zIndex: 10 }}
                   >
-                    <ul className="p-2 border-edges border-opacity-30 border rounded-lg">
+                    <ul className="p-2 border-zinc-500 border-opacity-30 border rounded-lg">
                       <Link href={skylineLink}>
-                        <li className="py-2 px-4 font-light text-primary hover:bg-main">
+                        <li className="py-2 px-4 font-medium text-white hover:bg-indigo-400 rounded-lg">
                           {skylineNavbar}
                         </li>
                       </Link>
 
                       {/* Custom Divider */}
-                      <div className="my-2 border-t-[2px] border-opacity-40 border-edges" />
+                      <div className="my-2 border-t-[2px] border-opacity-40 border-zinc-500" />
 
                       <Link href={airpalLink}>
-                        <li className="py-2 px-4 font-light text-primary hover:bg-main">
+                        <li className="py-2 px-4 font-medium text-white hover:bg-indigo-400 rounded-lg">
                           {airpalNavbar}
                         </li>
                       </Link>
@@ -135,7 +135,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={teamLink}
-                className="block py-2 px-3 font-light text-primary hover:text-secondary hover:duration-150 md:p-0"
+                className="block py-2 px-3 font-medium text-white hover:text-zinc-300 hover:duration-150 md:p-0"
               >
                 {teamNavbar}
               </Link>
@@ -145,7 +145,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={contactLink}
-                className="block py-2 px-3 font-light text-primary hover:text-secondary hover:duration-150 md:p-0"
+                className="block py-2 px-3 font-medium text-white hover:text-zinc-300 hover:duration-150 md:p-0"
               >
                 {contactNavbar}
               </Link>

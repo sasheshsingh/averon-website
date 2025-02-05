@@ -1,8 +1,18 @@
+// HINTS FOR COLOR USAGE
+/*
+    Background: zinc-950
+    Border & Outlines: zinc-500
+    Titles & Headers: white
+    subtitles / descriptions / hover: zinc-300
+    interactive color: indigo-400
+*/
+
+
 // EXTERNAL LINKS
 export const waitlistURL = "https://www.google.com";
 export const linkedinURL = "https://www.linkedin.com/company/theaveron/";
 export const crunchbaseURL = "https://www.crunchbase.com/organization/averon-6fb2";
-export const instagramURL = "";
+export const instagramURL = "https://www.instagram.com/averon.swiss/";
 export const averonURL = "https://theaveron.com/";
 
 // INTERNAL ROUTES

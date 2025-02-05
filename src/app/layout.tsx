@@ -21,7 +21,7 @@ export default function RootLayout({
       <body
         className={twMerge(
           inter.className,
-          "bg-background text-primary antialiased"
+          "bg-zinc-950 antialiased"
         )}
       >
         <ScreenSizeGuard>{children}</ScreenSizeGuard>
