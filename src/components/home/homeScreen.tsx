@@ -6,11 +6,16 @@ import { SkyLinePreview } from "./skylinePreview";
 
 const HomeScreen = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto w-full">
+    <div className="mx-auto w-full">
       <Hero />
-      <Vision />
+      <div className="max-w-screen-2xl mx-auto">
+        <Vision />
+      </div>
       <GeneralFeatures />
-      <SkyLinePreview />
+      <div className="max-w-screen-2xl mx-auto">
+        <SkyLinePreview />
+        <SkyLinePreview />
+      </div>
     </div>
   );
 };

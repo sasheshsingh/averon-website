@@ -44,7 +44,7 @@ const Navbar = () => {
               className="relative overflow-hidden text-white font-medium rounded-lg text-sm px-4 py-2 text-center"
               style={{ backgroundSize: "200% 200%" }}
               whileTap={{
-                scale: 0.95,
+                scale: 0.85,
                 transition: { type: "spring", stiffness: 300, damping: 15 },
               }}
               whileHover={{

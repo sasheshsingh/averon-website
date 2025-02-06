@@ -1,20 +1,7 @@
 "use client";
 import React from "react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import {
-  Award,
-  Box,
-  BrainCircuit,
-  CodeXml,
-  Leaf,
-  Lock,
-  Repeat,
-  ScanEye,
-  Search,
-  Settings,
-  Siren,
-  Sparkles,
-} from "lucide-react";
+import { BrainCircuit, CodeXml, Repeat, ScanEye, Siren } from "lucide-react";
 import {
   uniqueFeatures,
   uniqueFeaturesCardFiveSubtitle,
@@ -65,24 +52,27 @@ const gridItemsData = [
 
 export function GeneralFeatures() {
   return (
-    <div className="mt-40 mb-24">
-      {/* Section title */}
-      <div className="text-3xl font-semibold mx-auto text-white text-center mb-16">
-        {uniqueFeatures}
-      </div>
+    <div className="h-[50rem] w-full bg-zinc-950 bg-grid-white/[0.2] relative flex items-center justify-center">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-zinc-950 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="mt-20 mb-24">
+        {/* Section title */}
+        <div className="text-3xl font-semibold mx-auto text-white text-center mb-16">
+          {uniqueFeatures}
+        </div>
 
-      {/* Grid container */}
-      <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
-        {gridItemsData.map((item, index) => (
-          <GridItem
-            key={index}
-            area={item.area}
-            icon={item.icon}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
-      </ul>
+        {/* Grid container */}
+        <ul className="bg-zinc-950 grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+          {gridItemsData.map((item, index) => (
+            <GridItem
+              key={index}
+              area={item.area}
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
