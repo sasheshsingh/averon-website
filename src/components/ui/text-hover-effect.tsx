@@ -8,22 +8,20 @@ export const TextHoverEffect = ({
 }: {
   text: string;
   duration?: number;
-  automatic?: boolean;
 }) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
-  const [hovered, setHovered] = useState(false);
   const [maskPosition, setMaskPosition] = useState({ cx: "50%", cy: "50%" });
 
   useEffect(() => {
-    if (svgRef.current && cursor.x !== null && cursor.y !== null) {
-      const svgRect = svgRef.current.getBoundingClientRect();
-      const cxPercentage = ((cursor.x - svgRect.left) / svgRect.width) * 100;
-      const cyPercentage = ((cursor.y - svgRect.top) / svgRect.height) * 100;
-      setMaskPosition({
-        cx: `${cxPercentage}%`,
-        cy: `${cyPercentage}%`,
-      });
+    if (svgRef.current) {
+      const animate = () => {
+        const svgRect = svgRef.current!.getBoundingClientRect();
+        const cxPercentage = ((cursor.x - svgRect.left) / svgRect.width) * 100;
+        const cyPercentage = ((cursor.y - svgRect.top) / svgRect.height) * 100;
+        setMaskPosition({ cx: `${cxPercentage}%`, cy: `${cyPercentage}%` });
+      };
+      animate();
     }
   }, [cursor]);
 
@@ -34,92 +32,42 @@ export const TextHoverEffect = ({
       height="100%"
       viewBox="0 0 300 100"
       xmlns="http://www.w3.org/2000/svg"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
       onMouseMove={(e) => setCursor({ x: e.clientX, y: e.clientY })}
       className="select-none"
     >
       <defs>
-        <linearGradient
-          id="textGradient"
+        <motion.linearGradient
+          id="animatedGradient"
           gradientUnits="userSpaceOnUse"
-          cx="50%"
-          cy="50%"
-          r="25%"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
+          animate={{ x1: ["0%", "100%", "0%"], x2: ["100%", "0%", "100%"] }}
+          transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
         >
-          {hovered && (
-            <>
-              <stop offset="0%" stopColor={"var(--yellow-500)"} />
-              <stop offset="25%" stopColor={"var(--red-500)"} />
-              <stop offset="50%" stopColor={"var(--blue-500)"} />
-              <stop offset="75%" stopColor={"var(--cyan-500)"} />
-              <stop offset="100%" stopColor={"var(--violet-500)"} />
-            </>
-          )}
-        </linearGradient>
-
-        <motion.radialGradient
-          id="revealMask"
-          gradientUnits="userSpaceOnUse"
-          r="20%"
-          animate={maskPosition}
-          transition={{ duration: duration ?? 0, ease: "easeOut" }}
-        >
-          <stop offset="0%" stopColor="white" />
-          <stop offset="100%" stopColor="black" />
-        </motion.radialGradient>
-        <mask id="textMask">
-          <rect
-            x="0"
-            y="0"
-            width="100%"
-            height="100%"
-            fill="url(#revealMask)"
-          />
-        </mask>
+          <stop offset="0%" stopColor="var(--yellow-500)" />
+          <stop offset="25%" stopColor="var(--red-500)" />
+          <stop offset="50%" stopColor="var(--blue-500)" />
+          <stop offset="75%" stopColor="var(--cyan-500)" />
+          <stop offset="100%" stopColor="var(--violet-500)" />
+        </motion.linearGradient>
       </defs>
-      <text
-        x="50%"
-        y="50%"
-        textAnchor="middle"
-        dominantBaseline="middle"
-        strokeWidth="0.5"
-        className="font-[helvetica] font-bold stroke-neutral-200 dark:stroke-neutral-800 fill-transparent text-4xl  "
-        style={{ opacity: hovered ? 0.7 : 0 }}
-      >
-        {text}
-      </text>
+
       <motion.text
         x="50%"
         y="50%"
         textAnchor="middle"
         dominantBaseline="middle"
+        stroke="url(#animatedGradient)"
         strokeWidth="0.5"
-        className="font-[helvetica] font-bold fill-transparent text-4xl stroke-neutral-200 dark:stroke-neutral-800"
+        className="font-[helvetica] font-bold fill-transparent text-4xl"
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
-        animate={{
-          strokeDashoffset: 0,
-          strokeDasharray: 1000,
-        }}
-        transition={{
-          duration: 4,
-          ease: "easeInOut",
-        }}
+        animate={{ strokeDashoffset: 0, strokeDasharray: 1000 }}
+        transition={{ duration: 10, ease: "easeInOut" }}
       >
         {text}
       </motion.text>
-      <text
-        x="50%"
-        y="50%"
-        textAnchor="middle"
-        dominantBaseline="middle"
-        stroke="url(#textGradient)"
-        strokeWidth="0.5"
-        mask="url(#textMask)"
-        className="font-[helvetica] font-bold fill-transparent text-4xl"
-      >
-        {text}
-      </text>
     </svg>
   );
 };

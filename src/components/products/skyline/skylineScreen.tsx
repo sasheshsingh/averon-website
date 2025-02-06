@@ -2,6 +2,7 @@ import React from "react";
 import SkyLineHero from "./skylineHero";
 import SkyLineTrailer from "./skylineTrailer";
 import SkyLineFeatures from "./skylineFeatures";
+import SkyLineShots from "./skylineShots";
 
 const SkyLineScreen = () => {
   return (
@@ -10,6 +11,7 @@ const SkyLineScreen = () => {
       <SkyLineTrailer />
       <div className="max-w-screen-2xl mx-auto">
         <SkyLineFeatures />
+        <SkyLineShots />
       </div>
     </div>
   );

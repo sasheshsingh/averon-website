@@ -23,6 +23,8 @@ export const skylinePageTitle = "Averon | SkyLine";
 export const skylinePageHeroTitle = "SkyLine for Smarter & Safer Skies";
 export const skylinePageHeroSubtitle = "Welcome to MailJet, the best transactional email service on the web. We provide reliable, scalable, and customizable email solutions for your";
 
+export const skylinePageFeatureSectionTitle = "SkyLine Features"; 
+
 export const skylinePageFeatureOneTitle = "Feature One";
 export const skylinePageFeatureOneSubtitle = "Description about skyline feature here";
 

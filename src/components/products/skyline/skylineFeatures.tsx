@@ -1,5 +1,23 @@
 "use client";
-import { skylinePageFeatureEightSubtitle, skylinePageFeatureEightTitle, skylinePageFeatureFiveSubtitle, skylinePageFeatureFiveTitle, skylinePageFeatureFourSubtitle, skylinePageFeatureFourTitle, skylinePageFeatureOneSubtitle, skylinePageFeatureOneTitle, skylinePageFeatureSevenSubtitle, skylinePageFeatureSevenTitle, skylinePageFeatureSixSubtitle, skylinePageFeatureSixTitle, skylinePageFeatureThreeSubtitle, skylinePageFeatureThreeTitle, skylinePageFeatureTwoSubtitle, skylinePageFeatureTwoTitle } from "@/data/content";
+import {
+  skylinePageFeatureEightSubtitle,
+  skylinePageFeatureEightTitle,
+  skylinePageFeatureFiveSubtitle,
+  skylinePageFeatureFiveTitle,
+  skylinePageFeatureFourSubtitle,
+  skylinePageFeatureFourTitle,
+  skylinePageFeatureOneSubtitle,
+  skylinePageFeatureOneTitle,
+  skylinePageFeatureSectionTitle,
+  skylinePageFeatureSevenSubtitle,
+  skylinePageFeatureSevenTitle,
+  skylinePageFeatureSixSubtitle,
+  skylinePageFeatureSixTitle,
+  skylinePageFeatureThreeSubtitle,
+  skylinePageFeatureThreeTitle,
+  skylinePageFeatureTwoSubtitle,
+  skylinePageFeatureTwoTitle,
+} from "@/data/content";
 import { cn } from "../../../../lib/utils";
 import {
   AppWindow,
@@ -51,17 +69,22 @@ const SkyLineFeatures = () => {
     },
     {
       title: skylinePageFeatureEightTitle,
-      description: skylinePageFeatureEightSubtitle, 
+      description: skylinePageFeatureEightSubtitle,
       icon: <Heart />,
     },
   ];
 
   return (
-    <div className="my-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
-      {features.map((feature, index) => (
-        <Feature key={feature.title} {...feature} index={index} />
-      ))}
-    </div>
+    <>
+      <div className="text-3xl font-semibold mx-auto text-white text-center mt-16 mb-10">
+        {skylinePageFeatureSectionTitle}
+      </div>
+      <div className="mb-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+        {features.map((feature, index) => (
+          <Feature key={feature.title} {...feature} index={index} />
+        ))}
+      </div>
+    </>
   );
 };
 
