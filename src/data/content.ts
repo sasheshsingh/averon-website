@@ -27,6 +27,23 @@ export const ourVisionCardOneSubtitle = "Lorem Ipsum is simply dummy text of the
 export const ourVisionCardTwoSubtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
 export const ourVisionCardThreeSubtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
 
+// COMPETITIVE EDGE
+export const uniqueFeatures = "Our Competitive Edge";
+export const uniqueFeaturesCardOneTitle = "Title One";
+export const uniqueFeaturesCardTwoTitle = "Title One";
+export const uniqueFeaturesCardThreeTitle = "Title One";
+export const uniqueFeaturesCardFourTitle = "Title One";
+export const uniqueFeaturesCardFiveTitle = "Title One";
+export const uniqueFeaturesCardOneSubtitle = "Small Description of feature";
+export const uniqueFeaturesCardTwoSubtitle = "Small Description of feature";
+export const uniqueFeaturesCardThreeSubtitle = "Small Description of feature";
+export const uniqueFeaturesCardFourSubtitle = "Small Description of feature";
+export const uniqueFeaturesCardFiveSubtitle = "Small Description of feature";
+
+// SKYLINE PREVIEW
+export const skylinePreviewTitle = "Short title for the product goes here";
+export const skyLineButton = "Explore more";
+
 // EXTERNAL LINKS
 export const waitlistURL = "https://www.google.com";
 export const linkedinURL = "https://www.linkedin.com/company/theaveron/";
