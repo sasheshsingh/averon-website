@@ -55,10 +55,10 @@ export function GeneralFeatures() {
     <div className="h-[50rem] w-full bg-zinc-950 bg-grid-white/[0.2] relative flex items-center justify-center">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-zinc-950 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="mt-20 mb-24">
-        {/* Section title */}
-        <div className="text-3xl font-semibold mx-auto text-white text-center mb-16">
+        <div className="relative text-3xl font-semibold mx-auto text-white text-center mb-16">
           {uniqueFeatures}
         </div>
+        {/* Section title */}
 
         {/* Grid container */}
         <ul className="bg-zinc-950 grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">

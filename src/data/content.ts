@@ -49,6 +49,10 @@ export const airpalPreviewTitle = "Short title for the product goes here";
 export const airpalExploreButton = "Explore more";
 export const airpalWaitlistButton = "Join our Waitlist";
 
+// GLOBAL PRESENCE
+export const globalPresenceTitle = "Global Presence title";
+export const globalPresenceSubtitle = "this is the subtitle for global presence section";
+
 // EXTERNAL LINKS
 export const waitlistURL = "https://www.google.com";
 export const linkedinURL = "https://www.linkedin.com/company/theaveron/";

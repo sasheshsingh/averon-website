@@ -15,7 +15,7 @@ import {
 import Link from "next/link";
 
 export function AirPalPreview() {
-  const images = [AirPalOne.src, AirPalTwo.src, AirPalThree.src];
+  const images = [AirPalOne.src, AirPalThree.src, AirPalTwo.src];
 
   return (
     <ImagesSlider className="rounded-2xl my-10 h-[55rem]" images={images}>
