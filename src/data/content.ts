@@ -6,7 +6,7 @@
     card icons: zinc-300
     subtitles / descriptions: zinc-400
     hover & small notes: zinc-400
-    interactive color: indigo-400
+    interactive color: indigo-400, blue-500
     line height: leading-6
     Card titles: text-xl
     Card subtitles: text-sm 
@@ -43,6 +43,11 @@ export const uniqueFeaturesCardFiveSubtitle = "Small Description of feature";
 // SKYLINE PREVIEW
 export const skylinePreviewTitle = "Short title for the product goes here";
 export const skyLineButton = "Explore more";
+
+// AIRPAL PREVIEW
+export const airpalPreviewTitle = "Short title for the product goes here";
+export const airpalExploreButton = "Explore more";
+export const airpalWaitlistButton = "Join our Waitlist";
 
 // EXTERNAL LINKS
 export const waitlistURL = "https://www.google.com";
