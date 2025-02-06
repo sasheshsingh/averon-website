@@ -16,7 +16,7 @@ export function SkyLinePreview() {
   const images = [SkyLineShotOne.src, SkyLineShotTwo.src, SkyLineShotThree.src];
 
   return (
-    <ImagesSlider className="rounded-lg my-10 h-[55rem]" images={images}>
+    <ImagesSlider className="rounded-2xl my-10 h-[55rem]" images={images}>
       <motion.div
         initial={{
           opacity: 0,
