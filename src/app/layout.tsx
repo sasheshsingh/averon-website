@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-const inter = Inter({ subsets: ["latin"] });
+import ScreenSizeGuard from "../components/screenSizeLogin";
+
+const roboto = Roboto({
+  subsets: ["latin"], 
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Averon",
@@ -18,9 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={twMerge(inter.className, "bg-black text-white antialiased")}
+        className={twMerge(
+          roboto.className,
+          "bg-zinc-950 antialiased"
+        )}
       >
-        {children}
+        <ScreenSizeGuard>{children}</ScreenSizeGuard>
       </body>
     </html>
   );
