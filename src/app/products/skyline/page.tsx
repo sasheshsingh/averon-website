@@ -1,20 +1,19 @@
 "use client";
 
 import Navbar from "@/components/navbar";
-import HomeScreen from "@/components/home/homeScreen";
 import Footer from "@/components/footer";
 import Loading from "@/components/loading"; 
-import { homePageTitle } from "@/data/content";
+import { skylinePageTitle } from "@/data/content";
 
 export default function Home() {
   return (
     <>
-      <title>{homePageTitle}</title>
+      <title>{skylinePageTitle}</title>
 
       <Loading /> 
       
       <Navbar />
-      <HomeScreen />
+      Hello from SkyLine section
       <Footer />
     </>
   );

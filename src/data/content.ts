@@ -12,6 +12,10 @@
     Card subtitles: text-sm 
 */
 
+// WEBPAGE TITLES
+export const homePageTitle = "Averon | Home";
+export const skylinePageTitle = "Averon | SkyLine";
+
 // HERO
 export const heroTitle = "A New Paradigm";
 export const heroSubtitleStart = "World's First";
