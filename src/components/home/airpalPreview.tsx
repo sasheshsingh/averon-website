@@ -2,22 +2,20 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "../ui/images-slider";
-import SkyLineShotTwo from "../../assets/SkyLine_two.png";
-import SkyLineShotOne from "../../assets/SkyLine_one.jpg";
-import SkyLineShotThree from "../../assets/SkyLine_three.jpg";
+import AirPalOne from "../../assets/AirPal_one.jpg";
+import AirPalTwo from "../../assets/AirPal_two.png";
+import AirPalThree from "../../assets/AirPal_three.png";
 import {
   airpalExploreButton,
   airpalLink,
   airpalPreviewTitle,
   airpalWaitlistButton,
-  skyLineButton,
-  skylinePreviewTitle,
   waitlistURL,
 } from "@/data/content";
 import Link from "next/link";
 
 export function AirPalPreview() {
-  const images = [SkyLineShotOne.src, SkyLineShotTwo.src, SkyLineShotThree.src];
+  const images = [AirPalOne.src, AirPalTwo.src, AirPalThree.src];
 
   return (
     <ImagesSlider className="rounded-lg my-10 h-[55rem]" images={images}>
