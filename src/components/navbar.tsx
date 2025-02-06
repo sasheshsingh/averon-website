@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import AveronLogo from "../assets/Averon.svg";
+import AveronLogo from "../../public/assets/Averon.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";

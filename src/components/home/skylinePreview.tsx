@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "../ui/images-slider";
-import SkyLineShotTwo from "../../assets/SkyLine_two.png";
-import SkyLineShotOne from "../../assets/SkyLine_one.jpg";
-import SkyLineShotThree from "../../assets/SkyLine_three.jpg";
+import SkyLineShotTwo from "../../../public/assets/SkyLine_two.png";
+import SkyLineShotOne from "../../../public/assets/SkyLine_one.jpg";
+import SkyLineShotThree from "../../../public/assets/SkyLine_three.jpg";
 import {
   skyLineButton,
   skylineLink,

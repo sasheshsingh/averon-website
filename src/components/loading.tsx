@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import AveronLoadingLogo from "@/assets/AveronLoading.svg";
+import AveronLoadingLogo from "../../public/assets/AveronLoading.svg";
 
 export default function Loading() {
   const [isLoading, setIsLoading] = useState(true);
