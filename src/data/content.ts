@@ -9,12 +9,19 @@
     interactive color: indigo-400, blue-500
     line height: leading-6
     Card titles: text-xl
+    hero titles: text-5xl
+    hero subtitle: text-lg
+    video boxes: rounded-xl
     Card subtitles: text-sm 
 */
 
 // WEBPAGE TITLES
 export const homePageTitle = "Averon | Home";
 export const skylinePageTitle = "Averon | SkyLine";
+
+// SKYLINE PAGE CONTENT
+export const skylinePageHeroTitle = "SkyLine for Smarter & Safer Skies";
+export const skylinePageHeroSubtitle = "Welcome to MailJet, the best transactional email service on the web. We provide reliable, scalable, and customizable email solutions for your";
 
 // HERO
 export const heroTitle = "A New Paradigm";

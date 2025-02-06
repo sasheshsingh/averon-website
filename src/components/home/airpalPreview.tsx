@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "../ui/images-slider";
-import AirPalOne from "../../assets/AirPal_one.jpg";
-import AirPalTwo from "../../assets/AirPal_two.png";
-import AirPalThree from "../../assets/AirPal_three.png";
+import AirPalOne from "../../../public/assets/AirPal_one.jpg";
+import AirPalTwo from "../../../public/assets/AirPal_two.png";
+import AirPalThree from "../../../public/assets/AirPal_three.png";
 import {
   airpalExploreButton,
   airpalLink,
