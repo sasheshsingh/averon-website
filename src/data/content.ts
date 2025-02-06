@@ -3,14 +3,51 @@
     Background: zinc-950
     Border & Outlines: zinc-500
     Titles & Headers: white
-    card icons: zinc-300
+    card icons: zinc-300 / indigo-300
     subtitles / descriptions: zinc-400
     hover & small notes: zinc-400
     interactive color: indigo-400, blue-500
     line height: leading-6
     Card titles: text-xl
+    hero titles: text-5xl
+    hero subtitle: text-lg
+    video boxes: rounded-xl
     Card subtitles: text-sm 
 */
+
+// WEBPAGE TITLES
+export const homePageTitle = "Averon | Home";
+export const skylinePageTitle = "Averon | SkyLine";
+
+// SKYLINE PAGE CONTENT
+export const skylinePageHeroTitle = "SkyLine for Smarter & Safer Skies";
+export const skylinePageHeroSubtitle = "Welcome to MailJet, the best transactional email service on the web. We provide reliable, scalable, and customizable email solutions for your";
+
+export const skylinePageFeatureSectionTitle = "SkyLine Features"; 
+
+export const skylinePageFeatureOneTitle = "Feature One";
+export const skylinePageFeatureOneSubtitle = "Description about skyline feature here";
+
+export const skylinePageFeatureTwoTitle = "Feature Two";
+export const skylinePageFeatureTwoSubtitle = "Description about skyline feature here";
+
+export const skylinePageFeatureThreeTitle = "Feature Three";
+export const skylinePageFeatureThreeSubtitle = "Description about skyline feature here";
+
+export const skylinePageFeatureFourTitle = "Feature Four";
+export const skylinePageFeatureFourSubtitle = "Description about skyline feature here";
+
+export const skylinePageFeatureFiveTitle = "Feature Five";
+export const skylinePageFeatureFiveSubtitle = "Description about skyline feature here";
+
+export const skylinePageFeatureSixTitle = "Feature Six";
+export const skylinePageFeatureSixSubtitle = "Description about skyline feature here";
+
+export const skylinePageFeatureSevenTitle = "Feature Seven";
+export const skylinePageFeatureSevenSubtitle = "Description about skyline feature here";
+
+export const skylinePageFeatureEightTitle = "Feature Eight";
+export const skylinePageFeatureEightSubtitle = "Description about skyline feature here";
 
 // HERO
 export const heroTitle = "A New Paradigm";
