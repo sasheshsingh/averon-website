@@ -17,8 +17,8 @@ const SkyLineTrailer = () => {
             playsInline
           >
             <source
-              // src="../../../assets"
-              src="../../../assets/SkyLine_trailer.mp4"
+              src="../../../assets"
+              // src="../../../assets/SkyLine_trailer.mp4"
               type="video/mp4"
             />
           </video>

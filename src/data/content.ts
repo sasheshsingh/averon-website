@@ -49,6 +49,21 @@ export const skylinePageFeatureSevenSubtitle = "Description about skyline featur
 export const skylinePageFeatureEightTitle = "Feature Eight";
 export const skylinePageFeatureEightSubtitle = "Description about skyline feature here";
 
+export const skylineHardwareInfoOneTitle = "Title will be here";
+export const skylineHardwareInfoOneSubtitle = "Content as description of title will be here";
+
+export const skylineHardwareInfoTwoTitle = "Title will be here";
+export const skylineHardwareInfoTwoSubtitle = "Content as description of title will be here";
+
+export const skylineHardwareInfoThreeTitle = "Title will be here";
+export const skylineHardwareInfoThreeSubtitle = "Content as description of title will be here";
+
+export const skylineHardwareInfoFourTitle = "Title will be here";
+export const skylineHardwareInfoFourSubtitle = "Content as description of title will be here";
+
+export const skylineHardwareInfoFiveTitle = "Title will be here";
+export const skylineHardwareInfoFiveSubtitle = "Content as description of title will be here";
+
 // HERO
 export const heroTitle = "A New Paradigm";
 export const heroSubtitleStart = "World's First";
