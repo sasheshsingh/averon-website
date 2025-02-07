@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 import { BackgroundGradient } from "../../ui/background-gradient";
@@ -17,8 +16,7 @@ const SkyLineTrailer = () => {
             playsInline
           >
             <source
-              src="../../../assets"
-              // src="../../../assets/SkyLine_trailer.mp4"
+              src="../../../assets/SkyLine_trailer.mp4"
               type="video/mp4"
             />
           </video>
