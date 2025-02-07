@@ -1,66 +1,80 @@
+"use client";
+import { HeroHighlight } from "../../ui/hero-highlight";
 import React from "react";
-import { Key } from "lucide-react";
-import HardwareImageOne from "../../../../public/assets/gallery/skyline/hardware_info/waterproof.jpg";
-import Image from "next/image";
-
-// I THINK ITS NOT TOO GOOD 
-// THIS NEEDS TO BE CHANGED BRO
-
-// INSTEAD OF THIS I CAN ADD Background Overlay Card FROM THE LIB
+import { Droplets, BatteryFull, ScanEye, Route, Leaf } from "lucide-react";
+import {
+  skylineHardwareInfoFiveSubtitle,
+  skylineHardwareInfoFiveTitle,
+  skylineHardwareInfoFourSubtitle,
+  skylineHardwareInfoFourTitle,
+  skylineHardwareInfoOneSubtitle,
+  skylineHardwareInfoOneTitle,
+  skylineHardwareInfoThreeSubtitle,
+  skylineHardwareInfoThreeTitle,
+  skylineHardwareInfoTwoSubtitle,
+  skylineHardwareInfoTwoTitle,
+} from "@/data/content";
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 
 const SkyLineHardwareInfo = () => {
   return (
-    <div></div>
+    <HeroHighlight className="w-7/12 py-10 my-10">
+      <BentoGrid className="mx-auto md:auto-rows-[17rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={item.className}
+            icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </HeroHighlight>
   );
 };
 
 export default SkyLineHardwareInfo;
 
 const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-zinc-950"></div>
 );
+
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Image className="w-11/12 mx-auto h-32 rounded-xl grayscale-[50%] blur-[1.5px]" src={HardwareImageOne} alt="" />,
-    icon: <Key className="h-4 w-4 text-zinc-300" />,
-  },
-  {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Image className="w-11/12 mx-auto h-32 rounded-xl grayscale-[50%] blur-[1.5px]" src={HardwareImageOne} alt="" />,
-    icon: <Key className="h-4 w-4 text-zinc-300" />,
-  },
-  {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: skylineHardwareInfoOneTitle,
+    description: skylineHardwareInfoOneSubtitle,
     header: <Skeleton />,
-    icon: <Key className="h-4 w-4 text-zinc-300" />,
+    className: "md:col-span-2",
+    icon: <ScanEye className="h-6 w-6 text-indigo-300" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
+    title: skylineHardwareInfoTwoTitle,
+    description: skylineHardwareInfoTwoSubtitle,
     header: <Skeleton />,
-    icon: <Key className="h-4 w-4 text-zinc-300" />,
+    className: "md:col-span-1",
+    icon: <BatteryFull className="h-6 w-6 text-indigo-300" />,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
+    title: skylineHardwareInfoThreeTitle,
+    description: skylineHardwareInfoThreeSubtitle,
     header: <Skeleton />,
-    icon: <Key className="h-4 w-4 text-zinc-300" />,
+    className: "md:col-span-1",
+    icon: <Droplets className="h-6 w-6 text-indigo-300" />,
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
+    title: skylineHardwareInfoFourTitle,
+    description: skylineHardwareInfoFourSubtitle,
     header: <Skeleton />,
-    icon: <Key className="h-4 w-4 text-zinc-300" />,
+    className: "md:col-span-1",
+    icon: <Route className="h-6 w-6 text-indigo-300" />,
   },
   {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
+    title: skylineHardwareInfoFiveTitle,
+    description: skylineHardwareInfoFiveSubtitle,
     header: <Skeleton />,
-    icon: <Key className="h-4 w-4 text-zinc-300" />,
+    className: "md:col-span-1",
+    icon: <Leaf className="h-6 w-6 text-indigo-300" />,
   },
 ];
