@@ -13,7 +13,7 @@ const AirPalHero = () => {
   return (
     <div className="mx-auto rounded-md h-[30rem] overflow-hidden">
       <div className="h-[40rem] flex flex-col lg:flex-row overflow-hidden items-center justify-center bg-zinc-950 w-full gap-4 mx-auto px-8 relative">
-        <div className="mb-32 flex flex-col items-center justify-center h-[40rem] relative z-10">
+        <div className="mb-36 flex flex-col items-center justify-center h-[40rem] relative z-10">
           <p className="text-zinc-300 text-lg mb-4">
             {airpalPageHeroSubtitle}
           </p>
@@ -27,7 +27,7 @@ const AirPalHero = () => {
             className="h-full w-full absolute inset-0 z-0"
           >
             <CanvasRevealEffect
-              animationSpeed={0.4}
+              animationSpeed={0.8}
               containerClassName="bg-transparent"
               colors={[
                 [59, 130, 246],

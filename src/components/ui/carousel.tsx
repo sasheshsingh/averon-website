@@ -1,4 +1,3 @@
-"use client";
 import { ArrowRight } from "lucide-react";
 import { useState, useRef, useId, useEffect } from "react";
 
@@ -15,26 +14,15 @@ interface SlideProps {
 
 const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
   const slideRef = useRef<HTMLLIElement>(null);
-  const xRef = useRef(0);
-  const yRef = useRef(0);
   const frameRef = useRef<number>();
 
   useEffect(() => {
     const animate = () => {
       if (!slideRef.current) return;
-      const x = xRef.current;
-      const y = yRef.current;
-      slideRef.current.style.setProperty("--x", `${x}px`);
-      slideRef.current.style.setProperty("--y", `${y}px`);
       frameRef.current = requestAnimationFrame(animate);
     };
-
     frameRef.current = requestAnimationFrame(animate);
-    return () => {
-      if (frameRef.current) {
-        cancelAnimationFrame(frameRef.current);
-      }
-    };
+    return () => cancelAnimationFrame(frameRef.current!);
   }, []);
 
   const imageLoaded = (event: React.SyntheticEvent<HTMLImageElement>) => {
@@ -45,7 +33,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="flex flex-1 items-center justify-center relative opacity-100 transition-all duration-300 ease-in-out w-[100vmin] h-[50vmin] mx-[4vmin] z-10"
+        className="flex flex-1 items-center justify-center relative opacity-100 transition-all duration-300 ease-in-out w-[130vmin] h-[70vmin] mx-[4vmin] z-10"
         onClick={() => handleSlideClick(index)}
         style={{
           transform:
@@ -57,8 +45,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         <div
           className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
           style={{
-            transform:
-              current === index ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)" : "none",
+            transform: current === index ? "translate3d(0, 0, 0)" : "none",
           }}
         >
           <img
@@ -85,13 +72,13 @@ interface CarouselControlProps {
 const CarouselControl = ({ type, title, handleClick }: CarouselControlProps) => {
   return (
     <button
-      className={`w-10 h-10 flex items-center mx-2 justify-center bg-zinc-950 border-3 border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
+      className={`w-12 h-12 flex items-center mx-3 justify-center bg-zinc-950 border-3 border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
         type === "previous" ? "rotate-180" : ""
       }`}
       title={title}
       onClick={handleClick}
     >
-      <ArrowRight className="text-zinc-200" />
+      <ArrowRight className="text-zinc-200 w-6 h-6" />
     </button>
   );
 };
@@ -118,7 +105,7 @@ export function Carousel({ slides }: CarouselProps) {
   const id = useId();
 
   return (
-    <div className="relative w-[100vmin] h-[50vmin] mx-auto" aria-labelledby={`carousel-heading-${id}`}>
+    <div className="relative w-[130vmin] h-[70vmin] mx-auto" aria-labelledby={`carousel-heading-${id}`}>
       <ul
         className="absolute flex mx-[-4vmin] transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${current * (100 / slides.length)}%)` }}
@@ -128,7 +115,7 @@ export function Carousel({ slides }: CarouselProps) {
         ))}
       </ul>
 
-      <div className="absolute flex justify-center w-full top-[calc(100%+1rem)]">
+      <div className="absolute flex justify-center w-full top-[calc(100%+1.5rem)]">
         <CarouselControl type="previous" title="Go to previous slide" handleClick={handlePreviousClick} />
         <CarouselControl type="next" title="Go to next slide" handleClick={handleNextClick} />
       </div>
