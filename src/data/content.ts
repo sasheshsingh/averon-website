@@ -18,6 +18,12 @@
 // WEBPAGE TITLES
 export const homePageTitle = "Averon | Home";
 export const skylinePageTitle = "Averon | SkyLine";
+export const airpalPageTitle = "Averon | AirPal";
+
+// AIRPAL PAGE CONTENT
+export const airpalPageHeroTitleOne = "Build awesome apps with Aceternity.";
+export const airpalPageHeroTitleTwo = "Transform ideas into reality today.";
+export const airpalPageHeroSubtitle = "The road to freedom starts from here";
 
 // SKYLINE PAGE CONTENT
 export const skylinePageHeroTitle = "SkyLine for Smarter & Safer Skies";

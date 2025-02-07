@@ -1,20 +1,19 @@
 "use client";
-
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Loading from "@/components/loading";
-import { skylinePageTitle } from "@/data/content";
-import SkyLineScreen from "@/components/products/skyline/skylineScreen";
+import { airpalPageTitle } from "@/data/content";
+import AirPalScreen from "@/components/products/airpal/airpalScreen";
 
-export default function SkyLine() {
+export default function AirPal() {
   return (
     <>
-      <title>{skylinePageTitle}</title>
+      <title>{airpalPageTitle}</title>
 
       <Loading />
 
       <Navbar />
-      <SkyLineScreen />
+      <AirPalScreen />
       <Footer />
     </>
   );
