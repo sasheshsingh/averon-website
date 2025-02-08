@@ -3,6 +3,7 @@ import AirPalHero from "./airpalHero";
 import AirPalTrailer from "./airpalTrailer";
 import AirPalShots from "./airpalShots";
 import AirPalFeatures from "./airpalFeatures";
+import AirPalWaitlist from "./airpalWaitlist";
 
 const AirPalScreen = () => {
   return (
@@ -13,6 +14,7 @@ const AirPalScreen = () => {
         <AirPalShots />
       </div>
       <AirPalFeatures />
+      <AirPalWaitlist />
     </div>
   );
 };

@@ -8,10 +8,11 @@
     hover & small notes: zinc-400
     interactive color: indigo-400, blue-500
     line height: leading-6
-    Card titles: text-xl
     hero titles: text-5xl
+    section headers (except hero): text-3xl
     hero subtitle: text-lg
     video boxes: rounded-xl
+    Card titles: text-xl
     Card subtitles: text-sm 
 */
 
@@ -25,6 +26,11 @@ export const airpalPageHeroTitleOne = "Build awesome apps with Aceternity.";
 export const airpalPageHeroTitleTwo = "Transform ideas into reality today.";
 export const airpalPageHeroSubtitle = "The road to freedom starts from here";
 
+export const airpalWaitlistSectionButtonTitle = "Get Early Notifcation";
+export const airpalWaitlistSectionFirstTextPart = "AirPal is now open for you to add to your";
+export const airpalWaitlistSectionSecondTextPart = "Waitlist !";
+
+export const airpalFeaturesSectionTitle = "AirPal Features";
 export const airpalPageFeaturesOneTitle = "Feature title";
 export const airpalPageFeaturesOneSubtitle = "Feature description about averon airpal details";
 
@@ -47,7 +53,7 @@ export const airpalPageFeaturesSixSubtitle = "Feature description about averon a
 export const skylinePageHeroTitle = "SkyLine for Smarter & Safer Skies";
 export const skylinePageHeroSubtitle = "Welcome to MailJet, the best transactional email service on the web. We provide reliable, scalable, and customizable email solutions for your";
 
-export const skylinePageFeatureSectionTitle = "SkyLine Features"; 
+export const skylinePageFeatureSectionTitle = "SkyLine Features";
 
 export const skylinePageFeatureOneTitle = "Feature One";
 export const skylinePageFeatureOneSubtitle = "Description about skyline feature here";
