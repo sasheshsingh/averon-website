@@ -1,5 +1,6 @@
 "use client";
 import {
+  airpalFeaturesSectionTitle,
   airpalPageFeaturesFiveSubtitle,
   airpalPageFeaturesFiveTitle,
   airpalPageFeaturesFourSubtitle,
@@ -25,9 +26,14 @@ import {
 
 const AirPalFeatures = () => {
   return (
-    <div className="max-w-5xl mx-auto px-8 mt-12 mb-24">
-      <HoverEffect items={projects} />
-    </div>
+    <>
+      <div className="text-3xl font-semibold mx-auto text-white text-center mt-20 mb-10">
+        {airpalFeaturesSectionTitle}
+      </div>
+      <div className="max-w-5xl mx-auto px-8 mb-10">
+        <HoverEffect items={projects} />
+      </div>
+    </>
   );
 };
 

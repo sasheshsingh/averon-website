@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Vortex } from "../../ui/vortex";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 const AirPalTrailer = () => {
@@ -16,8 +15,7 @@ const AirPalTrailer = () => {
                 playsInline
               >
                 <source
-                  src="../../assets"
-                //   src="../../assets/AirPal_trailer.mp4"
+                  src="../../assets/AirPal_trailer.mp4"
                   type="video/mp4"
                 />
               </video>
