@@ -25,6 +25,24 @@ export const airpalPageHeroTitleOne = "Build awesome apps with Aceternity.";
 export const airpalPageHeroTitleTwo = "Transform ideas into reality today.";
 export const airpalPageHeroSubtitle = "The road to freedom starts from here";
 
+export const airpalPageFeaturesOneTitle = "Feature title";
+export const airpalPageFeaturesOneSubtitle = "Feature description about averon airpal details";
+
+export const airpalPageFeaturesTwoTitle = "Feature title";
+export const airpalPageFeaturesTwoSubtitle = "Feature description about averon airpal details";
+
+export const airpalPageFeaturesThreeTitle = "Feature title";
+export const airpalPageFeaturesThreeSubtitle = "Feature description about averon airpal details";
+
+export const airpalPageFeaturesFourTitle = "Feature title";
+export const airpalPageFeaturesFourSubtitle = "Feature description about averon airpal details";
+
+export const airpalPageFeaturesFiveTitle = "Feature title";
+export const airpalPageFeaturesFiveSubtitle = "Feature description about averon airpal details";
+
+export const airpalPageFeaturesSixTitle = "Feature title";
+export const airpalPageFeaturesSixSubtitle = "Feature description about averon airpal details";
+
 // SKYLINE PAGE CONTENT
 export const skylinePageHeroTitle = "SkyLine for Smarter & Safer Skies";
 export const skylinePageHeroSubtitle = "Welcome to MailJet, the best transactional email service on the web. We provide reliable, scalable, and customizable email solutions for your";
