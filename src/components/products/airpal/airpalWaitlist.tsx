@@ -4,7 +4,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { SparklesCore } from "@/components/ui/sparkles";
-import { airpalWaitlistSectionButtonTitle, airpalWaitlistSectionFirstTextPart, airpalWaitlistSectionSecondTextPart } from "@/data/content";
+import { airpalWaitlistSectionButtonTitle, airpalWaitlistSectionFirstTextPart, airpalWaitlistSectionSecondTextPart, waitlistURL } from "@/data/content";
 
 const AirPalWaitlist = () => {
   return (
@@ -33,7 +33,7 @@ const AirPalWaitlist = () => {
         </h2>
 
         {/* Button */}
-        <Link href="">
+        <Link href={waitlistURL}>
           <motion.div
             className="relative overflow-hidden text-white font-medium rounded-lg text-sm px-4 py-2 text-center"
             style={{ backgroundSize: "200% 200%" }}
