@@ -21,6 +21,13 @@ export const homePageTitle = "Averon | Home";
 export const skylinePageTitle = "Averon | SkyLine";
 export const airpalPageTitle = "Averon | AirPal";
 
+// TEAMS PAGE CONTENT
+export const teamsHeroTitle = "We sell soap worldwide";
+export const teamsHeroSubtitle = "This globe is interactive and customizable. Have fun with it, and don't forget to share it. This globe is interactive and customizable. Have fun with it, and don't forget to share it.";
+
+export const ourMissionTitle = "Our Mission";
+export const ourMissionSubtitle = "This globe is interactive and customizable. Have fun with it, and don't forget to share it. This globe is interactive and customizable. Have fun with it, and don't forget to share it.";
+
 // AIRPAL PAGE CONTENT
 export const airpalPageHeroTitleOne = "Build awesome apps with Aceternity.";
 export const airpalPageHeroTitleTwo = "Transform ideas into reality today.";
