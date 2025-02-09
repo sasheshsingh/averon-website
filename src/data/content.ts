@@ -16,10 +16,34 @@
     Card subtitles: text-sm 
 */
 
-// WEBPAGE TITLES
+// WEBPAGE TITLES - DONE
 export const homePageTitle = "Averon | Home";
 export const skylinePageTitle = "Averon | SkyLine";
 export const airpalPageTitle = "Averon | AirPal";
+export const teamPageTitle = "Averon | Team";
+
+// TEAMS PAGE CONTENT
+export const teamsHeroTitle = "A Diverse Team of Innovators at Averon";
+export const teamsHeroSubtitle = "Passionate about transforming security with next-gen autonomous drones for a safer world.";
+
+export const ourMissionTitle = "Our Mission";
+export const ourMissionSubtitle = "We are committed to advancing public safety with autonomous solutions that deliver real-time protection, empowering people and governments to face tomorrow’s challenges today.";
+
+export const parsTitle = "Pars Barghandan";
+export const parsSubtitle = "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.";
+export const parsRole = "Chief Executive Officer";
+
+export const ruiTitle = "Rui Duarte";
+export const ruiSubtitle = "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.";
+export const ruiRole = "Chief Strategy Officer";
+
+export const albertTitle = "Albert Rincón";
+export const albertSubtitle = "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.";
+export const albertRole = "Chief Technology Officer";
+
+export const carolinaTitle = "Carolina Amado";
+export const carolinaSubtitle = "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.";
+export const carolinaRole = "Chief Business Development Officer";
 
 // AIRPAL PAGE CONTENT
 export const airpalPageHeroTitleOne = "Build awesome apps with Aceternity.";
@@ -94,42 +118,49 @@ export const skylineHardwareInfoFourSubtitle = "Content as description of title 
 export const skylineHardwareInfoFiveTitle = "Title will be here";
 export const skylineHardwareInfoFiveSubtitle = "Content as description of title will be here";
 
-// HERO
+// HERO - DONE
 export const heroTitle = "A New Paradigm";
 export const heroSubtitleStart = "World's First";
-export const heroSubtitleEnd = "UAVs for Safer World & Smarter Skies";
-export const heroSubtitleAnimatingWords = ["Intelligent", "Automated", "Elegant", "AI-Based"];
+export const heroSubtitleEnd = "for Safer Communities & Smart Skies";
+export const heroSubtitleAnimatingWords = ["Intelligent Drones", "Automated UAVs"];
 
-// VISION
+// VISION - DONE
 export const ourVisionTitle = "Our Vision";
-export const ourVisionCardOneTitle = "Title One";
-export const ourVisionCardTwoTitle = "Title One";
-export const ourVisionCardThreeTitle = "Title One";
-export const ourVisionCardOneSubtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
-export const ourVisionCardTwoSubtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
-export const ourVisionCardThreeSubtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
+export const ourVisionCardOneTitle = "Smart Security";
+export const ourVisionCardOneSubtitle = "Averon’s intelligent drones provide next-gen security for cities and properties, ensuring safety with cutting-edge technology.";
 
-// COMPETITIVE EDGE
+export const ourVisionCardTwoTitle = "AI Urban Protection";
+export const ourVisionCardTwoSubtitle = "Empowering smart cities with automated drones that enhance safety and surveillance in real-time.";
+
+export const ourVisionCardThreeTitle = "Autonomous Drones";
+export const ourVisionCardThreeSubtitle = "Protecting what matters with autonomous drones designed for efficient, AI-powered security solutions.";
+
+// COMPETITIVE EDGE - DONE
 export const uniqueFeatures = "Our Competitive Edge";
-export const uniqueFeaturesCardOneTitle = "Title One";
-export const uniqueFeaturesCardTwoTitle = "Title One";
-export const uniqueFeaturesCardThreeTitle = "Title One";
-export const uniqueFeaturesCardFourTitle = "Title One";
-export const uniqueFeaturesCardFiveTitle = "Title One";
-export const uniqueFeaturesCardOneSubtitle = "Small Description of feature";
-export const uniqueFeaturesCardTwoSubtitle = "Small Description of feature";
-export const uniqueFeaturesCardThreeSubtitle = "Small Description of feature";
-export const uniqueFeaturesCardFourSubtitle = "Small Description of feature";
-export const uniqueFeaturesCardFiveSubtitle = "Small Description of feature";
+export const uniqueFeaturesCardOneTitle = "Next-Gen Technology";
+export const uniqueFeaturesCardOneSubtitle = "Leveraging AI and automation for drones that learn and adapt, offering unmatched efficiency in security.";
 
-// SKYLINE PREVIEW
-export const skylinePreviewTitle = "Short title for the product goes here";
+export const uniqueFeaturesCardTwoTitle = "Seamless Integration";
+export const uniqueFeaturesCardTwoSubtitle = "Our drones integrate effortlessly into existing infrastructure, enhancing citywide security without disruption.";
+
+export const uniqueFeaturesCardThreeTitle = "Real-Time Response";
+export const uniqueFeaturesCardThreeSubtitle = "Instant, intelligent decision-making ensures immediate protection for both urban and private spaces.";
+
+export const uniqueFeaturesCardFourTitle = "Scalable Solutions";
+export const uniqueFeaturesCardFourSubtitle = "From smart cities to individual properties, our drones offer flexible, scalable solutions tailored to any need.";
+
+export const uniqueFeaturesCardFiveTitle = "Sustainable Innovation";
+export const uniqueFeaturesCardFiveSubtitle = "Built with eco-friendly technology, Averon’s drones are designed to reduce carbon footprint while maximizing performance.";
+
+
+// SKYLINE PREVIEW - DONE
+export const skylinePreviewTitle = "Smart Skies for Safer Cities";
 export const skyLineButton = "Explore more";
 
-// AIRPAL PREVIEW
-export const airpalPreviewTitle = "Short title for the product goes here";
-export const airpalExploreButton = "Explore more";
-export const airpalWaitlistButton = "Join our Waitlist";
+// AIRPAL PREVIEW - DONE
+export const airpalPreviewTitle = "The Sky's the Limit for Smarter Security";
+export const airpalExploreButton = "Read more";
+export const airpalWaitlistButton = "Get Early Access";
 
 // GLOBAL PRESENCE
 export const globalPresenceTitle = "Global Presence title";

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { BrainCircuit, CodeXml, Repeat, ScanEye, Siren } from "lucide-react";
+import { BrainCircuit, CodeXml, Workflow, ScanEye, Leaf } from "lucide-react";
 import {
   uniqueFeatures,
   uniqueFeaturesCardFiveSubtitle,
@@ -20,31 +20,31 @@ import {
 const gridItemsData = [
   {
     area: "md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]",
-    icon: <BrainCircuit className="h-4 w-4 text-zinc-300" />,
+    icon: <BrainCircuit className="h-5 w-5 text-zinc-300" />,
     title: uniqueFeaturesCardOneTitle,
     description: uniqueFeaturesCardOneSubtitle,
   },
   {
     area: "md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]",
-    icon: <Siren className="h-4 w-4 text-zinc-300" />,
+    icon: <Workflow className="h-5 w-5 text-zinc-300" />,
     title: uniqueFeaturesCardTwoTitle,
     description: uniqueFeaturesCardTwoSubtitle,
   },
   {
     area: "md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]",
-    icon: <Repeat className="h-4 w-4 text-zinc-300" />,
+    icon: <ScanEye className="h-5 w-5 text-zinc-300" />,
     title: uniqueFeaturesCardThreeTitle,
     description: uniqueFeaturesCardThreeSubtitle,
   },
   {
     area: "md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]",
-    icon: <ScanEye className="h-4 w-4 text-zinc-300" />,
+    icon: <CodeXml className="h-5 w-5 text-zinc-300" />,
     title: uniqueFeaturesCardFourTitle,
     description: uniqueFeaturesCardFourSubtitle,
   },
   {
     area: "md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]",
-    icon: <CodeXml className="h-4 w-4 text-zinc-300" />,
+    icon: <Leaf className="h-5 w-5 text-zinc-300" />,
     title: uniqueFeaturesCardFiveTitle,
     description: uniqueFeaturesCardFiveSubtitle,
   },
@@ -61,7 +61,7 @@ export function GeneralFeatures() {
         </div>
 
         {/* Grid container */}
-        <ul className="bg-zinc-950 grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+        <ul className="max-w-[100rem] bg-zinc-950 grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
           {gridItemsData.map((item, index) => (
             <GridItem
               key={index}

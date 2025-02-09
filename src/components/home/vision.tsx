@@ -10,7 +10,7 @@ import {
   ourVisionCardTwoTitle,
   ourVisionTitle,
 } from "@/data/content";
-import { Cctv, Cpu, ShieldCheck } from "lucide-react"; 
+import { Hotel, Cpu, ShieldCheck } from "lucide-react"; 
 
 // Static hardcoded data for the cards
 const visionCardsData = [
@@ -22,7 +22,7 @@ const visionCardsData = [
   {
     title: ourVisionCardTwoTitle,
     subtitle: ourVisionCardTwoSubtitle,
-    icon: Cctv,
+    icon: Hotel,
   },
   {
     title: ourVisionCardThreeTitle,
@@ -41,7 +41,7 @@ interface CardProps {
 const Card = ({ title, subtitle, icon: Icon }: CardProps) => {
   return (
     <div className="w-[25rem]">
-      <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-zinc-950">
+      <BackgroundGradient className="rounded-[22px] p-4 h-[15rem] sm:p-10 bg-zinc-950">
         <Icon className="w-10 h-10 text-zinc-300" />{" "}
         {/* Render the icon dynamically */}
         <p className="font-semibold sm:text-xl text-white mt-4 mb-2">{title}</p>
