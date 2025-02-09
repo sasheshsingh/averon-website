@@ -106,32 +106,32 @@ const OurTeam = () => {
     },
   ];
 
-  const testimonials4 = [
-    {
-      quote: carolinaSubtitle,
-      name: carolinaTitle,
-      designation: carolinaRole,
-      src: Carolina.src,
-    },
-    {
-      quote: "",
-      name: "",
-      designation: "",
-      src: Rui.src,
-    },
-    {
-      quote: "",
-      name: "",
-      designation: "",
-      src: Pars.src,
-    },
-    {
-      quote: "",
-      name: "",
-      designation: "",
-      src: Joao.src,
-    },
-  ];
+  // const testimonials4 = [
+  //   {
+  //     quote: carolinaSubtitle,
+  //     name: carolinaTitle,
+  //     designation: carolinaRole,
+  //     src: Carolina.src,
+  //   },
+  //   {
+  //     quote: "",
+  //     name: "",
+  //     designation: "",
+  //     src: Rui.src,
+  //   },
+  //   {
+  //     quote: "",
+  //     name: "",
+  //     designation: "",
+  //     src: Pars.src,
+  //   },
+  //   {
+  //     quote: "",
+  //     name: "",
+  //     designation: "",
+  //     src: Joao.src,
+  //   },
+  // ];
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -156,9 +156,6 @@ const OurTeam = () => {
           {/* Second Row */}
           <div>
             <AnimatedTestimonials testimonials={testimonials3} />
-          </div>
-          <div>
-            <AnimatedTestimonials testimonials={testimonials4} />
           </div>
         </div>
       )}
