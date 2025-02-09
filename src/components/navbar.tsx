@@ -19,7 +19,6 @@ import {
   skylineLink,
   airpalLink,
   teamLink,
-  contactLink,
   joinWaitlist,
 } from "@/data/content";
 
@@ -131,16 +130,6 @@ const Navbar = () => {
                 className="block py-2 px-3 font-medium text-white hover:text-zinc-400 hover:duration-150 md:p-0"
               >
                 {teamNavbar}
-              </Link>
-            </li>
-
-            {/* Contact */}
-            <li>
-              <Link
-                href={contactLink}
-                className="block py-2 px-3 font-medium text-white hover:text-zinc-400 hover:duration-150 md:p-0"
-              >
-                {contactNavbar}
               </Link>
             </li>
           </ul>
