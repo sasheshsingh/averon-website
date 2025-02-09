@@ -416,7 +416,7 @@ const TeamHero = () => {
           <h2 className="text-center text-4xl font-bold text-white">
             {teamsHeroTitle}
           </h2>
-          <p className="text-center text-base font-normal text-zinc-400 w-5/12 leading-8 mt-2 mx-auto">
+          <p className="text-center text-lg font-normal text-zinc-400 w-5/12 leading-8 mt-2 mx-auto">
             {teamsHeroSubtitle}
           </p>
         </motion.div>

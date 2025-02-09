@@ -15,7 +15,7 @@ const OurMission = () => {
         <div className="bg-clip-text text-transparent bg-gradient-to-b from-white to-indigo-400 text-4xl font-semibold mx-auto text-center">
           {ourMissionTitle}
         </div>
-        <p className="text-center text-xl font-normal text-zinc-400 w-6/12 leading-8 mt-3 mx-auto">
+        <p className="text-center text-xl font-normal text-zinc-300 w-6/12 leading-10 mt-3 mx-auto">
           {ourMissionSubtitle}
         </p>
       </Vortex>
