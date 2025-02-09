@@ -7,16 +7,16 @@ export const TypewriterEffect = ({
   className,
   cursorClassName,
 }: {
-  texts: string[]; 
+  texts: string[];
   className?: string;
   cursorClassName?: string;
 }) => {
-  const [currentTextIndex, setCurrentTextIndex] = useState(0); 
-  const [currentText, setCurrentText] = useState(""); 
-  const [isDeleting, setIsDeleting] = useState(false); 
-  const [typingSpeed, setTypingSpeed] = useState(150); 
-  const [deletingSpeed, setDeletingSpeed] = useState(50); 
-  
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [currentText, setCurrentText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+  const [deletingSpeed, setDeletingSpeed] = useState(50);
+
   const currentWord = texts[currentTextIndex];
 
   // Handle typewriter effect loop
@@ -49,7 +49,9 @@ export const TypewriterEffect = ({
   return (
     <div className={cn("text-5xl font-bold text-center", className)}>
       <motion.div className="inline">
-        <span className="text-white">{currentText}</span>
+        <span className="bg-gradient-to-b from-indigo-400 to-white text-transparent bg-clip-text">
+          {currentText}
+        </span>
       </motion.div>
       <motion.span
         initial={{ opacity: 0 }}

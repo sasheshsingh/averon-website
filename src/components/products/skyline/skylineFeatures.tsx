@@ -20,14 +20,14 @@ import {
 } from "@/data/content";
 import { cn } from "../../../../lib/utils";
 import {
-  AppWindow,
-  Cloud,
-  DollarSign,
-  ArrowRightCircle,
-  Heart,
-  HelpCircle,
-  MapPin,
-  Terminal,
+  MousePointerClick,
+  ScanEye,
+  VenetianMask,
+  Siren,
+  ShieldCheck,
+  Network,
+  MapPinned,
+  RadioTower,
 } from "lucide-react";
 
 const SkyLineFeatures = () => {
@@ -35,42 +35,42 @@ const SkyLineFeatures = () => {
     {
       title: skylinePageFeatureOneTitle,
       description: skylinePageFeatureOneSubtitle,
-      icon: <Terminal />,
+      icon: <ScanEye />,
     },
     {
       title: skylinePageFeatureTwoTitle,
       description: skylinePageFeatureTwoSubtitle,
-      icon: <ArrowRightCircle />,
+      icon: <MousePointerClick />,
     },
     {
       title: skylinePageFeatureThreeTitle,
       description: skylinePageFeatureThreeSubtitle,
-      icon: <DollarSign />,
+      icon: <VenetianMask />,
     },
     {
       title: skylinePageFeatureFourTitle,
       description: skylinePageFeatureFourSubtitle,
-      icon: <Cloud />,
+      icon: <ShieldCheck />,
     },
     {
       title: skylinePageFeatureFiveTitle,
       description: skylinePageFeatureFiveSubtitle,
-      icon: <MapPin />,
+      icon: <Siren />,
     },
     {
       title: skylinePageFeatureSixTitle,
       description: skylinePageFeatureSixSubtitle,
-      icon: <HelpCircle />,
+      icon: <Network />,
     },
     {
       title: skylinePageFeatureSevenTitle,
       description: skylinePageFeatureSevenSubtitle,
-      icon: <AppWindow />,
+      icon: <MapPinned />,
     },
     {
       title: skylinePageFeatureEightTitle,
       description: skylinePageFeatureEightSubtitle,
-      icon: <Heart />,
+      icon: <RadioTower />,
     },
   ];
 

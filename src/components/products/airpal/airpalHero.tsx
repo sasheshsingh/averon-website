@@ -14,7 +14,7 @@ const AirPalHero = () => {
     <div className="mx-auto rounded-md h-[50rem] overflow-hidden">
       <div className="h-[50rem] flex flex-col lg:flex-row overflow-hidden items-center justify-center bg-zinc-950 w-full gap-4 mx-auto px-8 relative">
         <div className="mb-36 flex flex-col items-center justify-center h-[40rem] relative z-10">
-          <p className="text-zinc-300 text-lg mb-4">
+          <p className="text-zinc-200 text-xl mb-4">
             {airpalPageHeroSubtitle}
           </p>
           <TypewriterEffect texts={texts} />

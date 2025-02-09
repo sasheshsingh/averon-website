@@ -56,7 +56,7 @@ const Card = ({ title, subtitle, icon: Icon }: CardProps) => {
 // Vision component
 const Vision = () => {
   return (
-    <div className="mt-12 mb-24">
+    <div className="w-11/12 mx-auto mt-12 mb-24">
       {/* Section title */}
       <div className="text-3xl font-semibold mx-auto text-white text-center mb-16">
         {ourVisionTitle}
