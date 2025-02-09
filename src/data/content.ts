@@ -162,7 +162,7 @@ export const airpalExploreButton = "Read more";
 export const airpalWaitlistButton = "Get Early Access";
 
 // EXTERNAL LINKS
-export const waitlistURL = "https://www.google.com";
+export const waitlistURL = "https://forms.gle/549jZc9dWgdRnQtQ9";
 export const linkedinURL = "https://www.linkedin.com/company/theaveron/";
 export const crunchbaseURL = "https://www.crunchbase.com/organization/averon-6fb2";
 export const instagramURL = "https://www.instagram.com/averon.swiss/";
