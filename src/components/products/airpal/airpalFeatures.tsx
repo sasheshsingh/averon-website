@@ -16,12 +16,12 @@ import {
 } from "@/data/content";
 import { HoverEffect } from "../../ui/card-hover-effect";
 import {
-  ShoppingCart,
-  PlayCircle,
-  Search,
-  Globe,
-  Users,
-  Server,
+  Siren,
+  BellElectric,
+  Cctv,
+  Radar,
+  Cloud,
+  AudioLines,
 } from "lucide-react";
 
 const AirPalFeatures = () => {
@@ -43,31 +43,31 @@ export const projects = [
   {
     title: airpalPageFeaturesOneTitle,
     description: airpalPageFeaturesOneSubtitle,
-    icon: ShoppingCart,
+    icon: Cctv,
   },
   {
     title: airpalPageFeaturesTwoTitle,
     description: airpalPageFeaturesTwoSubtitle,
-    icon: PlayCircle,
+    icon: Siren,
   },
   {
     title: airpalPageFeaturesThreeTitle,
     description: airpalPageFeaturesThreeSubtitle,
-    icon: Search,
+    icon: BellElectric,
   },
   {
     title: airpalPageFeaturesFourTitle,
     description: airpalPageFeaturesFourSubtitle,
-    icon: Globe,
+    icon: Radar,
   },
   {
     title: airpalPageFeaturesFiveTitle,
     description: airpalPageFeaturesFiveSubtitle,
-    icon: Users,
+    icon: Cloud,
   },
   {
     title: airpalPageFeaturesSixTitle,
     description: airpalPageFeaturesSixSubtitle,
-    icon: Server,
+    icon: AudioLines,
   },
 ];

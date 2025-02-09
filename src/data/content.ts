@@ -30,98 +30,98 @@ export const ourMissionTitle = "Our Mission";
 export const ourMissionSubtitle = "We are committed to advancing public safety with autonomous solutions that deliver real-time protection, empowering people and governments to face tomorrow’s challenges today.";
 
 export const parsTitle = "Pars Barghandan";
-export const parsSubtitle = "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.";
+export const parsSubtitle = "Serial tech entrepreneur with 6+ years' experience and a successful exit. Former Software Engineer and IT Specialist at Baxter, Morningstar, and Organon.";
 export const parsRole = "Chief Executive Officer";
 
 export const ruiTitle = "Rui Duarte";
-export const ruiSubtitle = "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.";
+export const ruiSubtitle = "Business strategist, brain trust member, and PR expert. Former Portuguese Parliament Member, Regulatory Communications Manager at Philip Morris, and Global PR Manager at MDPI.";
 export const ruiRole = "Chief Strategy Officer";
 
 export const albertTitle = "Albert Rincón";
-export const albertSubtitle = "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.";
+export const albertSubtitle = "Aerospace engineer with a BSc and MSc, experienced in engineering, project management, and innovation. Formerly with Capgemini Engineering, Vueling, and Kopter Group.";
 export const albertRole = "Chief Technology Officer";
 
 export const carolinaTitle = "Carolina Amado";
-export const carolinaSubtitle = "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.";
+export const carolinaSubtitle = "";
 export const carolinaRole = "Chief Business Development Officer";
 
-// AIRPAL PAGE CONTENT
-export const airpalPageHeroTitleOne = "Build awesome apps with Aceternity.";
-export const airpalPageHeroTitleTwo = "Transform ideas into reality today.";
-export const airpalPageHeroSubtitle = "The road to freedom starts from here";
+// AIRPAL PAGE CONTENT - DONE
+export const airpalPageHeroTitleOne = "AirPal secures your property with instant alerts";
+export const airpalPageHeroTitleTwo = "Real-time detection and notifications for complete peace of mind";
+export const airpalPageHeroSubtitle = "360° Home Protection";
 
-export const airpalWaitlistSectionButtonTitle = "Get Early Notifcation";
-export const airpalWaitlistSectionFirstTextPart = "AirPal is now open for you to add to your";
+export const airpalWaitlistSectionButtonTitle = "Get Early Access";
+export const airpalWaitlistSectionFirstTextPart = "AirPal is Now Open for You to Join the";
 export const airpalWaitlistSectionSecondTextPart = "Waitlist !";
 
 export const airpalFeaturesSectionTitle = "AirPal Features";
-export const airpalPageFeaturesOneTitle = "Feature title";
-export const airpalPageFeaturesOneSubtitle = "Feature description about averon airpal details";
+export const airpalPageFeaturesOneTitle = "Continuous Surveillance";
+export const airpalPageFeaturesOneSubtitle = "Periodic timer-based checks for ongoing home security coverage.";
 
-export const airpalPageFeaturesTwoTitle = "Feature title";
-export const airpalPageFeaturesTwoSubtitle = "Feature description about averon airpal details";
+export const airpalPageFeaturesTwoTitle = "Emergency Response";
+export const airpalPageFeaturesTwoSubtitle = "Automatically notifies 911 with live data if the homeowner doesn't respond.";
 
-export const airpalPageFeaturesThreeTitle = "Feature title";
-export const airpalPageFeaturesThreeSubtitle = "Feature description about averon airpal details";
+export const airpalPageFeaturesThreeTitle = "Instant Alerts";
+export const airpalPageFeaturesThreeSubtitle = "Push notifications and SMS with images to the homeowner for immediate awareness.";
 
-export const airpalPageFeaturesFourTitle = "Feature title";
-export const airpalPageFeaturesFourSubtitle = "Feature description about averon airpal details";
+export const airpalPageFeaturesFourTitle = "Radar System";
+export const airpalPageFeaturesFourSubtitle = "Mini radar silently scans your property for full perimeter security.";
 
-export const airpalPageFeaturesFiveTitle = "Feature title";
-export const airpalPageFeaturesFiveSubtitle = "Feature description about averon airpal details";
+export const airpalPageFeaturesFiveTitle = "Instant Cloud Recording";
+export const airpalPageFeaturesFiveSubtitle = "24/7 live recording with no delay, securely stored in the cloud for immediate access.";
 
-export const airpalPageFeaturesSixTitle = "Feature title";
-export const airpalPageFeaturesSixSubtitle = "Feature description about averon airpal details";
+export const airpalPageFeaturesSixTitle = "Smart Pet Activation";
+export const airpalPageFeaturesSixSubtitle = "Voice-activated drone launch triggered by your pet's commands for seamless monitoring.";
 
-// SKYLINE PAGE CONTENT
-export const skylinePageHeroTitle = "SkyLine for Smarter & Safer Skies";
-export const skylinePageHeroSubtitle = "Welcome to MailJet, the best transactional email service on the web. We provide reliable, scalable, and customizable email solutions for your";
+// SKYLINE PAGE CONTENT - DONE
+export const skylinePageHeroTitle = "SkyLine for Enhanced Public Safety";
+export const skylinePageHeroSubtitle = "Enhancing public safety with AI drones for real-time intelligence, rapid response, and aerial support in smart cities.";
 
 export const skylinePageFeatureSectionTitle = "SkyLine Features";
 
-export const skylinePageFeatureOneTitle = "Feature One";
-export const skylinePageFeatureOneSubtitle = "Description about skyline feature here";
+export const skylinePageFeatureOneTitle = "Area Scan";
+export const skylinePageFeatureOneSubtitle = "Automated surveillance of key locations at the touch of a button";
 
-export const skylinePageFeatureTwoTitle = "Feature Two";
-export const skylinePageFeatureTwoSubtitle = "Description about skyline feature here";
+export const skylinePageFeatureTwoTitle = "One-Click Launch";
+export const skylinePageFeatureTwoSubtitle = "Launch drones instantly for real-time monitoring and streaming";
 
-export const skylinePageFeatureThreeTitle = "Feature Three";
-export const skylinePageFeatureThreeSubtitle = "Description about skyline feature here";
+export const skylinePageFeatureThreeTitle = "Privacy Shield";
+export const skylinePageFeatureThreeSubtitle = "AI filters sensitive data to protect citizens' privacy during livestreams";
 
-export const skylinePageFeatureFourTitle = "Feature Four";
-export const skylinePageFeatureFourSubtitle = "Description about skyline feature here";
+export const skylinePageFeatureFourTitle = "Threat Detection";
+export const skylinePageFeatureFourSubtitle = "AI instantly flags suspicious activities like violence or weapons.";
 
-export const skylinePageFeatureFiveTitle = "Feature Five";
-export const skylinePageFeatureFiveSubtitle = "Description about skyline feature here";
+export const skylinePageFeatureFiveTitle = "Alert System";
+export const skylinePageFeatureFiveSubtitle = "Real-time notifications for security teams on detected incidents.";
 
-export const skylinePageFeatureSixTitle = "Feature Six";
-export const skylinePageFeatureSixSubtitle = "Description about skyline feature here";
+export const skylinePageFeatureSixTitle = "Drone Sync";
+export const skylinePageFeatureSixSubtitle = "Coordinated drone response for enhanced situational awareness.";
 
-export const skylinePageFeatureSevenTitle = "Feature Seven";
-export const skylinePageFeatureSevenSubtitle = "Description about skyline feature here";
+export const skylinePageFeatureSevenTitle = "Live Tracking";
+export const skylinePageFeatureSevenSubtitle = "Drones track suspects in real-time, sharing live location and video.";
 
-export const skylinePageFeatureEightTitle = "Feature Eight";
-export const skylinePageFeatureEightSubtitle = "Description about skyline feature here";
+export const skylinePageFeatureEightTitle = "Infinity Signal";
+export const skylinePageFeatureEightSubtitle = "Auto-extends coverage to nearby drones if one is damaged.";
 
-export const skylineHardwareInfoOneTitle = "Title will be here";
-export const skylineHardwareInfoOneSubtitle = "Content as description of title will be here";
+export const skylineHardwareInfoOneTitle = "5 Directional View";
+export const skylineHardwareInfoOneSubtitle = "Capture a 360° view for complete situational awareness.";
 
-export const skylineHardwareInfoTwoTitle = "Title will be here";
-export const skylineHardwareInfoTwoSubtitle = "Content as description of title will be here";
+export const skylineHardwareInfoTwoTitle = "Powerful Battery Life";
+export const skylineHardwareInfoTwoSubtitle = "Up to 40 minutes of flight time on a single charge.";
 
-export const skylineHardwareInfoThreeTitle = "Title will be here";
-export const skylineHardwareInfoThreeSubtitle = "Content as description of title will be here";
+export const skylineHardwareInfoThreeTitle = "Total Resilience";
+export const skylineHardwareInfoThreeSubtitle = "IP54 rated for reliable protection against dust and water in any environment.";
 
-export const skylineHardwareInfoFourTitle = "Title will be here";
-export const skylineHardwareInfoFourSubtitle = "Content as description of title will be here";
+export const skylineHardwareInfoFourTitle = "Extended Range";
+export const skylineHardwareInfoFourSubtitle = "Operate up to 7 km for broader coverage and reach.";
 
-export const skylineHardwareInfoFiveTitle = "Title will be here";
-export const skylineHardwareInfoFiveSubtitle = "Content as description of title will be here";
+export const skylineHardwareInfoFiveTitle = "Sustainable Energy";
+export const skylineHardwareInfoFiveSubtitle = "Powered by green energy for sustainable operations.";
 
 // HERO - DONE
 export const heroTitle = "A New Paradigm";
 export const heroSubtitleStart = "World's First";
-export const heroSubtitleEnd = "for Safer Communities & Smart Skies";
+export const heroSubtitleEnd = "for Smart Skies";
 export const heroSubtitleAnimatingWords = ["Intelligent Drones", "Automated UAVs"];
 
 // VISION - DONE
@@ -152,19 +152,14 @@ export const uniqueFeaturesCardFourSubtitle = "From smart cities to individual p
 export const uniqueFeaturesCardFiveTitle = "Sustainable Innovation";
 export const uniqueFeaturesCardFiveSubtitle = "Built with eco-friendly technology, Averon’s drones are designed to reduce carbon footprint while maximizing performance.";
 
-
 // SKYLINE PREVIEW - DONE
 export const skylinePreviewTitle = "Smart Skies for Safer Cities";
 export const skyLineButton = "Explore more";
 
 // AIRPAL PREVIEW - DONE
-export const airpalPreviewTitle = "The Sky's the Limit for Smarter Security";
+export const airpalPreviewTitle = "The Sky's the Limit for Smart Security";
 export const airpalExploreButton = "Read more";
 export const airpalWaitlistButton = "Get Early Access";
-
-// GLOBAL PRESENCE
-export const globalPresenceTitle = "Global Presence title";
-export const globalPresenceSubtitle = "this is the subtitle for global presence section";
 
 // EXTERNAL LINKS
 export const waitlistURL = "https://www.google.com";

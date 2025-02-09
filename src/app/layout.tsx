@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 import ScreenSizeGuard from "../components/screenSizeLogin";
 
 const roboto = Roboto({
-  subsets: ["latin"], 
+  subsets: ["latin"],
   weight: ["400", "700"],
 });
 
@@ -21,12 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={twMerge(
-          roboto.className,
-          "bg-zinc-950 antialiased"
-        )}
-      >
+      <body className={twMerge(roboto.className, "bg-zinc-950 antialiased")}>
         <ScreenSizeGuard>{children}</ScreenSizeGuard>
       </body>
     </html>
